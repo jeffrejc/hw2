@@ -1,0 +1,27 @@
+CSCI Homework 104
+Jeff Chen
+
+Question 1)
+a)	Choice 1: Tab
+b)	The actions that are going to be called are “rm -f *.o *~ shape1 shape2” and the commands “g++ -c -o shape.o shape.cpp, g++ -c -o shape1.o shape1.cpp, and g++ -o shape1 shape1.o shape.o” will be executed
+c)	The .PHONY rule tells the computer which targets in the Makefile are not actual files. In essence, it tells the makefile which files to ignore. The files that .PHONY specifies are always outdated
+d)	b, d
+
+Question 2)
+a)	README.md: unmodified
+b)	fun_problem.txt: untracked, README.md: modified
+c)	fun_problem.txt: unmodified, README.md: modified
+d)	fun_problem.txt: modified, README.md: modified
+e)	fun_problem.txt: untracked, README.md: staged. The contents of “fun_problem.txt” are blank due to the fact that git checkout undos every change that was made to the file.
+f)	README.md: both staged and modified. Although this seems counterintuitive, it’s because the modified part of the file isn’t staged, because I staged the file for commit before modifying it. Therefore, the older version of the file is staged for commit, but the modified version isn’t.
+g)	The last three lines the TAs will see in the README.md file are “Markdown is easy”, “Markdown is too easy”, “Fancy git move”
+
+Question 4)
+a)	If the string has only characters in it the string is automatically correctly parenthesized
+b)	If the string is empty, it is correctly parenthesized
+c)	If a is a correctly parenthesized expression, then (a) is also correctly parenthesized
+d)	If a is a correctly parenthesized expression, then [a] is also correctly parenthesized
+
+Question 5)
+a)	The nonrecursive method was faster by around 51%. (When asked to do 100 million iterations, it took the nonrecursive method 8 *10^-9 seconds to complete, while it took the recursive method 1.57*10^-8 seconds to complete)
+
